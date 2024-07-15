@@ -1,0 +1,47 @@
+-- Tabella Clienti
+CREATE TABLE Clienti (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Tipo NVARCHAR(10) NOT NULL,
+    Nome NVARCHAR(100) NOT NULL,
+    CodiceFiscale NVARCHAR(16) NULL,
+    PartitaIVA NVARCHAR(11) NULL,
+    Indirizzo NVARCHAR(200) NOT NULL,
+    Città NVARCHAR(100) NOT NULL,
+    CAP NVARCHAR(5) NOT NULL,
+    Telefono NVARCHAR(15) NOT NULL,
+    Email NVARCHAR(100) NOT NULL
+);
+
+-- Tabella Spedizioni
+CREATE TABLE Spedizioni (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    ClienteID INT NOT NULL,
+    NumeroIdentificativo NVARCHAR(50) NOT NULL,
+    DataSpedizione DATETIME NOT NULL,
+    Peso FLOAT NOT NULL,
+    CittàDestinataria NVARCHAR(100) NOT NULL,
+    IndirizzoDestinatario NVARCHAR(200) NOT NULL,
+    NominativoDestinatario NVARCHAR(100) NOT NULL,
+    Costo DECIMAL(10, 2) NOT NULL,
+    DataConsegnaPrevista DATETIME NOT NULL,
+    FOREIGN KEY (ClienteID) REFERENCES Clienti(ID)
+);
+
+-- Tabella Aggiornamenti Spedizioni
+CREATE TABLE AggiornamentiSpedizioni (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    SpedizioneID INT NOT NULL,
+    Stato NVARCHAR(20) NOT NULL,
+    Luogo NVARCHAR(100) NOT NULL,
+    Descrizione NVARCHAR(200),
+    DataOraAggiornamento DATETIME NOT NULL,
+    FOREIGN KEY (SpedizioneID) REFERENCES Spedizioni(ID)
+);
+
+-- Tabella Utenti
+CREATE TABLE Utenti (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Username NVARCHAR(50) NOT NULL,
+    Password NVARCHAR(255) NOT NULL,
+    Ruolo NVARCHAR(20) NOT NULL
+);
