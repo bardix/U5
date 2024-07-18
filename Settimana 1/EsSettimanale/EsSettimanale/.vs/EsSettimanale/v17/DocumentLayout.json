@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\views\\home\\aggiornamentospedizioni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:views\\home\\aggiornamentospedizioni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\views\\home\\gestioneclienti.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:views\\home\\gestioneclienti.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\views\\home\\loginutente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:views\\home\\loginutente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\views\\home\\auth\u0026autoradmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:views\\home\\auth\u0026autoradmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\services\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:services\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\views\\home\\visualizzazionestatospedizioni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:views\\home\\visualizzazionestatospedizioni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\views\\home\\registrazionespedizioni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:views\\home\\registrazionespedizioni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\views\\home\\registrazioneutente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:views\\home\\registrazioneutente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\services\\sqlserverservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:services\\sqlserverservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\models\\aggiornamentospedizione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:models\\aggiornamentospedizione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\models\\spedizione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:models\\spedizione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 1\\essettimanale\\essettimanale\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5058B6-5E51-420A-88F2-09F26BD8085C}|EsSettimanale.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +62,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginUtente.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\LoginUtente.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\LoginUtente.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\LoginUtente.cshtml",
+              "RelativeToolTip": "Views\\Home\\LoginUtente.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T13:13:06.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestioneClienti.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\GestioneClienti.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\GestioneClienti.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\GestioneClienti.cshtml",
+              "RelativeToolTip": "Views\\Home\\GestioneClienti.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T13:14:22.554Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AggiornamentoSpedizioni.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\AggiornamentoSpedizioni.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\AggiornamentoSpedizioni.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\AggiornamentoSpedizioni.cshtml",
+              "RelativeToolTip": "Views\\Home\\AggiornamentoSpedizioni.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T13:15:44.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth\u0026AutorAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\Auth\u0026AutorAdmin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Auth\u0026AutorAdmin.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\Auth\u0026AutorAdmin.cshtml",
+              "RelativeToolTip": "Views\\Home\\Auth\u0026AutorAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T13:19:01.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Services\\DbContext.cs",
+              "RelativeDocumentMoniker": "Services\\DbContext.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Services\\DbContext.cs",
+              "RelativeToolTip": "Services\\DbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T13:11:09.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VisualizzazioneStatoSpedizioni.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\VisualizzazioneStatoSpedizioni.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\VisualizzazioneStatoSpedizioni.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\VisualizzazioneStatoSpedizioni.cshtml",
+              "RelativeToolTip": "Views\\Home\\VisualizzazioneStatoSpedizioni.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T13:16:25.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegistrazioneSpedizioni.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\RegistrazioneSpedizioni.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\RegistrazioneSpedizioni.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\RegistrazioneSpedizioni.cshtml",
+              "RelativeToolTip": "Views\\Home\\RegistrazioneSpedizioni.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T13:15:24.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegistrazioneUtente.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\RegistrazioneUtente.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\RegistrazioneUtente.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Views\\Home\\RegistrazioneUtente.cshtml",
+              "RelativeToolTip": "Views\\Home\\RegistrazioneUtente.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T13:13:28.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Utente.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Models\\Utente.cs",
+              "RelativeDocumentMoniker": "Models\\Utente.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Models\\Utente.cs",
+              "RelativeToolTip": "Models\\Utente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T13:07:49.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SqlServerServiceBase.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Services\\SqlServerServiceBase.cs",
               "RelativeDocumentMoniker": "Services\\SqlServerServiceBase.cs",
@@ -30,8 +199,43 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AggiornamentoSpedizione.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Models\\AggiornamentoSpedizione.cs",
+              "RelativeDocumentMoniker": "Models\\AggiornamentoSpedizione.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Models\\AggiornamentoSpedizione.cs",
+              "RelativeToolTip": "Models\\AggiornamentoSpedizione.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T13:07:30.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Spedizione.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Models\\Spedizione.cs",
+              "RelativeDocumentMoniker": "Models\\Spedizione.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Models\\Spedizione.cs",
+              "RelativeToolTip": "Models\\Spedizione.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T13:07:10.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 1\\EsSettimanale\\EsSettimanale\\Models\\Cliente.cs",
+              "RelativeToolTip": "Models\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T13:06:53.631Z",
+              "EditorCaption": ""
             }
           ]
         }

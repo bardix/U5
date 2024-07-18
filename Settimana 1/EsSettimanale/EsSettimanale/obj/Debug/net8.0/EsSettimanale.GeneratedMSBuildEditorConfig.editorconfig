@@ -18,12 +18,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 1\EsSettimanale\EsSettimanale
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/AggiornamentoSpedizioni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZ2dpb3JuYW1lbnRvU3BlZGl6aW9uaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/Auth&AutorAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRoJkF1dG9yQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/GestioneClienti.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXN0aW9uZUNsaWVudGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/LoginUtente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblV0ZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/RegistrazioneSpedizioni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RyYXppb25lU3BlZGl6aW9uaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/RegistrazioneUtente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RyYXppb25lVXRlbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Home/VisualizzazioneStatoSpedizioni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN1YWxpenphemlvbmVTdGF0b1NwZWRpemlvbmkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 1/EsSettimanale/EsSettimanale/Views/Shared/Error.cshtml]
