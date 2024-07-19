@@ -1,0 +1,35 @@
+﻿@model IEnumerable<EsVenerdi.Models.Verbale>
+
+<h1>Verbale</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID Anagrafica</th>
+            <th>ID Violazione</th>
+            <th>Data Violazione</th>
+            <th>Indirizzo Violazione</th>
+            <th>Nominativo Agente</th>
+            <th>Data Trascrizione Verbale</th>
+            <th>Importo</th>
+            <th>Decurtamento Punti</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IDAnagrafica</td>
+                <td>@item.IDViolazione</td>
+                <td>@item.DataViolazione</td>
+                <td>@item.IndirizzoViolazione</td>
+                <td>@item.Nominativo_Agente</td>
+                <td>@item.DataTrascrizioneVerbale</td>
+                <td>@item.Importo</td>
+                <td>@item.DecurtamentoPunti</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Aggiungi Verbale</a>
