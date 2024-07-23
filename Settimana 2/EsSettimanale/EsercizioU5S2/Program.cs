@@ -1,3 +1,4 @@
+using _1BW_BE.Service;
 using EsercizioU5S2.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<SqlServerServiceBase>();
+builder.Services.AddSingleton<IPrenotazioniService, PrenotazioniService>();
+builder.Services.AddSingleton<IClientiService, ClientiService>();
+builder.Services.AddSingleton<ICamereService, CamereService>();
+builder.Services.AddSingleton<IServiziService, ServiziService>();
+builder.Services.AddSingleton<IServizioPrenotazioneService, ServizioPrenotazioneService>();
 
 var app = builder.Build();
 
