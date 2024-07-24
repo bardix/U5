@@ -18,8 +18,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 2\EsSettimanale\EsercizioU5S2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 2/EsSettimanale/EsercizioU5S2/Views/Account/AccesDenied.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc0RlbmllZC5jc2h0bWw=
+[C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 2/EsSettimanale/EsercizioU5S2/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/david/Desktop/Epicode/Esercitazioni Epicode/Unità 5/Repo mia/U5/Settimana 2/EsSettimanale/EsercizioU5S2/Views/Account/Login.cshtml]

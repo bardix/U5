@@ -16,16 +16,16 @@ public class AuthService
         _connectionString = connectionString;
     }
 
-    public async Task<User> AuthenticateUserAsync(string username, string passwordHash)
+    public async Task<User> AuthenticateUserAsync(string username, string password)
     {
         User user = null;
 
         using (SqlConnection conn = new SqlConnection(_connectionString))
         {
             await conn.OpenAsync();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE UserName = @UserName AND PasswordHash = @PasswordHash", conn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE UserName = @UserName AND PasswordHash = @Password", conn);
             cmd.Parameters.AddWithValue("@UserName", username);
-            cmd.Parameters.AddWithValue("@PasswordHash", passwordHash);
+            cmd.Parameters.AddWithValue("@Password", password);
 
             using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
             {

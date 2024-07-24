@@ -23,12 +23,9 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Login(string username, string password)
     {
-        // Simula l'hash della password, in produzione usa un metodo sicuro per hash
-        string passwordHash = password;
+        var user = await _authService.AuthenticateUserAsync(username, password);
 
-        User user = await _authService.AuthenticateUserAsync(username, passwordHash);
-
-        if (user != null)
+        if (user != null && VerifyPassword(password, user.PasswordHash))
         {
             await _authService.SignInAsync(HttpContext, user);
             return RedirectToAction("Index", "Home");
@@ -49,5 +46,11 @@ public class AccountController : Controller
     public IActionResult AccessDenied()
     {
         return View();
+    }
+
+    private bool VerifyPassword(string password, string storedPassword)
+    {
+        // Confronto semplice per password in chiaro
+        return password == storedPassword;
     }
 }

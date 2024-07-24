@@ -1,20 +1,23 @@
-using _1BW_BE.Service;
 using EsercizioU5S2.Config;
 using EsercizioU5S2.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using _1BW_BE.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddAuthentication("CookieAuthentication")
-    .AddCookie("CookieAuthentication", options =>
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
     {
         options.LoginPath = "/Account/Login";
         options.AccessDeniedPath = "/Account/AccessDenied";
     });
+
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("DipendentePolicy", policy =>
