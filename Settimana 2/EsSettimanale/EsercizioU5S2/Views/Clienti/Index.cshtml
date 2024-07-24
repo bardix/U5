@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Cliente>
+
+<h1>Gestione Clienti</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Codice Fiscale</th>
+            <th>Cognome</th>
+            <th>Nome</th>
+            <th>Città</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.CodiceFiscale</td>
+                <td>@cliente.Cognome</td>
+                <td>@cliente.Nome</td>
+                <td>@cliente.Città</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@cliente.CodiceFiscale">Modifica</a> |
+                    <a asp-action="Delete" asp-route-id="@cliente.CodiceFiscale">Elimina</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="Create">Aggiungi Nuovo Cliente</a>

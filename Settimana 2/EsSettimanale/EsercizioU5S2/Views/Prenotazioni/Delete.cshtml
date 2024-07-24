@@ -1,0 +1,11 @@
+﻿@model Prenotazione
+
+<h1>Elimina Prenotazione</h1>
+<div>
+    <h4>Sei sicuro di voler eliminare la prenotazione per il cliente @Model.CodiceFiscaleCliente?</h4>
+    <form asp-action="DeleteConfirmed">
+        <input type="hidden" asp-for="IDPrenotazione" />
+        <button type="submit" class="btn btn-danger">Elimina</button>
+        <a asp-action="Index" class="btn btn-secondary">Annulla</a>
+    </form>
+</div>

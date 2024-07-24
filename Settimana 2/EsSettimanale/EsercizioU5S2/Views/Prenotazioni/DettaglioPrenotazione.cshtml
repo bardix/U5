@@ -1,0 +1,20 @@
+﻿@model DettaglioPrenotazioneViewModel
+
+<h1>Dettaglio Prenotazione</h1>
+<div>
+    <h4>Prenotazione per il cliente: @Model.Prenotazione.CodiceFiscaleCliente</h4>
+    <p>Numero Camera: @Model.Prenotazione.NumeroCamera</p>
+    <p>Data Inizio: @Model.Prenotazione.DataInizioSoggiorno.ToShortDateString()</p>
+    <p>Data Fine: @Model.Prenotazione.DataFineSoggiorno.ToShortDateString()</p>
+    <p>Tariffa: @Model.Prenotazione.Tariffa</p>
+    <p>Caparra: @Model.Prenotazione.Caparra</p>
+    <h4>Servizi Aggiuntivi</h4>
+    <ul>
+        @foreach (var servizio in Model.Servizi)
+        {
+            <li>@servizio.Data.ToShortDateString() - @servizio.Quantità x @servizio.Prezzo</li>
+        }
+    </ul>
+    <h4>Totale da Saldare: @Model.TotaleDaSaldare</h4>
+</div>
+<a asp-action="Index">Torna alla lista</a>

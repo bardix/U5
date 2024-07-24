@@ -1,0 +1,25 @@
+﻿@model Camera
+
+<h1>Aggiungi Camera</h1>
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Numero"></label>
+        <input asp-for="Numero" class="form-control" />
+        <span asp-validation-for="Numero" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Descrizione"></label>
+        <input asp-for="Descrizione" class="form-control" />
+        <span asp-validation-for="Descrizione" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Tipologia"></label>
+        <select asp-for="Tipologia" class="form-control">
+            <option value="Singola">Singola</option>
+            <option value="Doppia">Doppia</option>
+        </select>
+        <span asp-validation-for="Tipologia" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Aggiungi</button>
+</form>
+<a asp-action="Index">Torna alla lista</a>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EsercizioU5S2.props" />
+</Project>

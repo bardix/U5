@@ -1,10 +1,10 @@
-﻿
-using _1BW_BE.Service;
+﻿using _1BW_BE.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
+[Authorize(Policy = "DipendentePolicy")]
 public class PrenotazioniController : Controller
 {
     private readonly IPrenotazioniService _prenotazioniService;
@@ -62,7 +62,7 @@ public class PrenotazioniController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, Prenotazione prenotazione)
+    public async Task<IActionResult> Edit(int id, [Bind("IDPrenotazione,CodiceFiscaleCliente,NumeroCamera,DataPrenotazione,NumeroProgressivo,Anno,DataInizioSoggiorno,DataFineSoggiorno,Caparra,Tariffa,Dettagli")] Prenotazione prenotazione)
     {
         if (id != prenotazione.IDPrenotazione)
         {

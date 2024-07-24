@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
+[Authorize(Policy = "DipendentePolicy")]
 public class CamereController : Controller
 {
     private readonly ICamereService _camereService;

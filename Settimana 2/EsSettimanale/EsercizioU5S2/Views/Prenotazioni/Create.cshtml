@@ -1,0 +1,32 @@
+﻿@model Prenotazione
+
+<h1>Aggiungi Prenotazione</h1>
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="CodiceFiscaleCliente"></label>
+        <input asp-for="CodiceFiscaleCliente" class="form-control" />
+        <span asp-validation-for="CodiceFiscaleCliente" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NumeroCamera"></label>
+        <input asp-for="NumeroCamera" class="form-control" />
+        <span asp-validation-for="NumeroCamera" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DataPrenotazione"></label>
+        <input asp-for="DataPrenotazione" type="date" class="form-control" />
+        <span asp-validation-for="DataPrenotazione" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DataInizioSoggiorno"></label>
+        <input asp-for="DataInizioSoggiorno" type="date" class="form-control" />
+        <span asp-validation-for="DataInizioSoggiorno" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DataFineSoggiorno"></label>
+        <input asp-for="DataFineSoggiorno" type="date" class="form-control" />
+        <span asp-validation-for="DataFineSoggiorno" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Aggiungi</button>
+</form>
+<a asp-action="Index">Torna alla lista</a>

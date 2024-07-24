@@ -1,0 +1,11 @@
+﻿@model Camera
+
+<h1>Elimina Camera</h1>
+<div>
+    <h4>Sei sicuro di voler eliminare la camera numero @Model.Numero?</h4>
+    <form asp-action="DeleteConfirmed">
+        <input type="hidden" asp-for="Numero" />
+        <button type="submit" class="btn btn-danger">Elimina</button>
+        <a asp-action="Index" class="btn btn-secondary">Annulla</a>
+    </form>
+</div>

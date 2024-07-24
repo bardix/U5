@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
+[Authorize(Policy = "DipendentePolicy")]
 public class ClientiController : Controller
 {
     private readonly IClientiService _clientiService;
@@ -22,7 +24,7 @@ public class ClientiController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(Cliente cliente)
+    public async Task<IActionResult> Create([Bind("CodiceFiscale,Cognome,Nome,Città,Provincia,Email,Telefono,Cellulare")] Cliente cliente)
     {
         if (ModelState.IsValid)
         {
@@ -49,7 +51,7 @@ public class ClientiController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(string id, Cliente cliente)
+    public async Task<IActionResult> Edit(string id, [Bind("CodiceFiscale,Cognome,Nome,Città,Provincia,Email,Telefono,Cellulare")] Cliente cliente)
     {
         if (id != cliente.CodiceFiscale)
         {
