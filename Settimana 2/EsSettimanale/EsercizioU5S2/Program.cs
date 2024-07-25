@@ -35,8 +35,8 @@ builder.Services.AddSingleton<IServiziService, ServiziService>();
 builder.Services.AddSingleton<IServizioPrenotazioneService, ServizioPrenotazioneService>();
 builder.Services.AddSingleton<IUserService, UserService>();
 
-// Register AuthService with the appropriate constructor parameter
-builder.Services.AddSingleton<AuthService>(serviceProvider =>
+// Register IAuthService with the appropriate implementation
+builder.Services.AddSingleton<IAuthService, AuthService>(serviceProvider =>
 {
     var config = serviceProvider.GetRequiredService<IOptions<DatabaseConfig>>().Value;
     return new AuthService(config.DefaultConnection);
