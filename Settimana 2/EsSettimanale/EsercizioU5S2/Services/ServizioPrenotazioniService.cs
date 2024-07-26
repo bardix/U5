@@ -131,34 +131,44 @@ namespace _1BW_BE.Service
             }
         }
 
-        public async Task<IEnumerable<ServizioPrenotazione>> GetServiziPrenotazioniByPrenotazioneIdAsync(int prenotazioneId)
+        public async Task<IEnumerable<ServizioPrenotazione>> GetServiziPrenotazioniByPrenotazioneIdAsync(int idPrenotazione)
         {
-            var serviziPrenotazioni = new List<ServizioPrenotazione>();
+            var serviziPrenotazione = new List<ServizioPrenotazione>();
+
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string sql = "SELECT * FROM ServiziPrenotazioni WHERE IDPrenotazione = @prenotazioneId";
+                string sql = @"SELECT sp.ID, sp.IDPrenotazione, sp.IDServizio, sp.Data, sp.Quantità, sp.Prezzo, s.Nome 
+                       FROM ServiziPrenotazioni sp
+                       JOIN Servizi s ON sp.IDServizio = s.IDServizio
+                       WHERE sp.IDPrenotazione = @idPrenotazione";
+
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
-                    command.Parameters.AddWithValue("@prenotazioneId", prenotazioneId);
+                    command.Parameters.AddWithValue("@idPrenotazione", idPrenotazione);
                     await connection.OpenAsync();
                     using (SqlDataReader reader = await command.ExecuteReaderAsync())
                     {
                         while (await reader.ReadAsync())
                         {
-                            serviziPrenotazioni.Add(new ServizioPrenotazione
+                            serviziPrenotazione.Add(new ServizioPrenotazione
                             {
                                 ID = Convert.ToInt32(reader["ID"]),
                                 IDPrenotazione = Convert.ToInt32(reader["IDPrenotazione"]),
                                 IDServizio = Convert.ToInt32(reader["IDServizio"]),
                                 Data = Convert.ToDateTime(reader["Data"]),
                                 Quantità = Convert.ToInt32(reader["Quantità"]),
-                                Prezzo = Convert.ToDecimal(reader["Prezzo"])
+                                Prezzo = Convert.ToDecimal(reader["Prezzo"]),
+                                Nome = reader["Nome"].ToString() // Recupera il nome del servizio
                             });
                         }
                     }
                 }
             }
-            return serviziPrenotazioni;
+
+            return serviziPrenotazione;
         }
+
+
+
     }
 }

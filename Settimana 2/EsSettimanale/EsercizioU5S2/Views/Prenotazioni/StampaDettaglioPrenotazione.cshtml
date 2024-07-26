@@ -1,0 +1,62 @@
+﻿@model DettaglioPrenotazioneViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dettaglio Prenotazione</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Dettaglio Prenotazione</h1>
+
+        <h2>Informazioni Prenotazione</h2>
+        <table class="table">
+            <tr>
+                <th>Numero Stanza</th>
+                <td>@Model.Prenotazione.NumeroCamera</td>
+            </tr>
+            <tr>
+                <th>Periodo</th>
+                <td>@Model.Prenotazione.DataInizioSoggiorno.ToShortDateString() - @Model.Prenotazione.DataFineSoggiorno.ToShortDateString()</td>
+            </tr>
+            <tr>
+                <th>Tariffa Applicata</th>
+                <td>@Model.Prenotazione.Tariffa.ToString("C")</td>
+            </tr>
+            <tr>
+                <th>Caparra</th>
+                <td>@Model.Prenotazione.Caparra.ToString("C")</td>
+            </tr>
+        </table>
+
+        <h2>Servizi Aggiuntivi</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Nome Servizio</th>
+                    <th>Quantità</th>
+                    <th>Prezzo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var servizio in Model.Servizi)
+                {
+                    <tr>
+                        <td>@servizio.Data.ToShortDateString()</td>
+                        <td>@servizio.Nome</td>
+                        <td>@servizio.Quantità</td>
+                        <td>@servizio.Prezzo.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <h3>Totale da Saldare: @Model.TotaleDaSaldare.ToString("C")</h3>
+
+        <a asp-action="Index" class="btn btn-primary">Torna alla lista delle prenotazioni</a>
+    </div>
+</body>
+</html>

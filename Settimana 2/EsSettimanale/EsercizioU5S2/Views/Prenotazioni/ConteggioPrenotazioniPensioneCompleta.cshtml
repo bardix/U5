@@ -2,8 +2,6 @@
     ViewData["Title"] = "Conteggio Prenotazioni Pensione Completa";
 }
 
-<h2>Conteggio Prenotazioni Pensione Completa</h2>
-
-<p>Numero totale di prenotazioni per soggiorni di tipo "pensione completa": @ViewBag.NumeroPrenotazioni</p>
-
-<a href="@Url.Action("Index", "Prenotazioni")" class="btn btn-primary">Torna alla Gestione Prenotazioni</a>
+<h1>Conteggio Prenotazioni Pensione Completa</h1>
+<p>Numero totale di prenotazioni per soggiorni di tipo "Pensione Completa": @ViewBag.NumeroPrenotazioni</p>
+<a asp-action="Index">Torna alla lista delle prenotazioni</a>

@@ -8,4 +8,6 @@
     public string Email { get; set; }
     public string Telefono { get; set; }
     public string Cellulare { get; set; }
+
+    public string NomeCompleto => $"{Nome} {Cognome}";
 }

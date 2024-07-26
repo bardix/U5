@@ -1,6 +1,7 @@
 ﻿using _1BW_BE.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -28,8 +29,10 @@ public class PrenotazioniController : Controller
         return View(prenotazioni);
     }
 
-    public IActionResult Create()
+    public async Task<IActionResult> Create()
     {
+        ViewBag.Clienti = new SelectList(await _clientiService.GetAllClientiAsync(), "CodiceFiscale", "NomeCompleto");
+        ViewBag.Camere = new SelectList(await _camereService.GetAllCamereAsync(), "Numero", "Descrizione");
         return View();
     }
 
@@ -42,6 +45,8 @@ public class PrenotazioniController : Controller
             await _prenotazioniService.AddPrenotazioneAsync(prenotazione);
             return RedirectToAction(nameof(Index));
         }
+        ViewBag.Clienti = new SelectList(await _clientiService.GetAllClientiAsync(), "CodiceFiscale", "NomeCompleto");
+        ViewBag.Camere = new SelectList(await _camereService.GetAllCamereAsync(), "Numero", "Descrizione");
         return View(prenotazione);
     }
 
@@ -57,6 +62,10 @@ public class PrenotazioniController : Controller
         {
             return NotFound();
         }
+
+        ViewBag.Clienti = new SelectList(await _clientiService.GetAllClientiAsync(), "CodiceFiscale", "NomeCompleto");
+        ViewBag.Camere = new SelectList(await _camereService.GetAllCamereAsync(), "Numero", "Descrizione");
+
         return View(prenotazione);
     }
 
@@ -74,6 +83,10 @@ public class PrenotazioniController : Controller
             await _prenotazioniService.UpdatePrenotazioneAsync(prenotazione);
             return RedirectToAction(nameof(Index));
         }
+
+        ViewBag.Clienti = new SelectList(await _clientiService.GetAllClientiAsync(), "CodiceFiscale", "NomeCompleto");
+        ViewBag.Camere = new SelectList(await _camereService.GetAllCamereAsync(), "Numero", "Descrizione");
+
         return View(prenotazione);
     }
 
@@ -119,12 +132,14 @@ public class PrenotazioniController : Controller
         var servizi = await _servizioPrenotazioneService.GetServiziPrenotazioniByPrenotazioneIdAsync(id);
         var totaleDaSaldare = prenotazione.Tariffa - prenotazione.Caparra + servizi.Sum(s => s.Prezzo * s.Quantità);
 
-        return View(new DettaglioPrenotazioneViewModel
+        var viewModel = new DettaglioPrenotazioneViewModel
         {
             Prenotazione = prenotazione,
             Servizi = servizi,
             TotaleDaSaldare = totaleDaSaldare
-        });
+        };
+
+        return View(viewModel);
     }
 
     [Authorize(Roles = "Dipendente")]
@@ -140,7 +155,6 @@ public class PrenotazioniController : Controller
         return View(prenotazioni);
     }
 
-
     [Authorize(Roles = "Dipendente")]
     public async Task<IActionResult> RicercaPrenotazioniPensioneCompleta()
     {
@@ -149,7 +163,6 @@ public class PrenotazioniController : Controller
         return View();
     }
 
-
     [Authorize(Roles = "Dipendente")]
     public async Task<IActionResult> ConteggioPrenotazioniPensioneCompleta()
     {
@@ -157,5 +170,4 @@ public class PrenotazioniController : Controller
         ViewBag.NumeroPrenotazioni = numeroPrenotazioni;
         return View();
     }
-
 }

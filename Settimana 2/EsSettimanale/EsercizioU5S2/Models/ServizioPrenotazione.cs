@@ -6,4 +6,5 @@
     public DateTime Data { get; set; }
     public int Quantità { get; set; }
     public decimal Prezzo { get; set; }
+    public string Nome { get; set; } // Aggiungi questa proprietà
 }

@@ -1,16 +1,7 @@
 ﻿@model IEnumerable<Prenotazione>
 
 <h1>Gestione Prenotazioni</h1>
-
-<form method="get" asp-action="RicercaPrenotazioniCliente">
-    <div class="form-group">
-        <label for="codiceFiscale">Codice Fiscale Cliente:</label>
-        <input type="text" name="codiceFiscale" class="form-control" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Cerca Prenotazioni</button>
-</form>
-
-<table class="table mt-3">
+<table class="table">
     <thead>
         <tr>
             <th>Codice Fiscale</th>
@@ -28,12 +19,11 @@
                 <td>@prenotazione.DataPrenotazione.ToShortDateString()</td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@prenotazione.IDPrenotazione">Modifica</a> |
-                    <a asp-action="Delete" asp-route-id="@prenotazione.IDPrenotazione">Elimina</a>
+                    <a asp-action="Delete" asp-route-id="@prenotazione.IDPrenotazione">Elimina</a> |
+                    <a asp-action="StampaDettaglioPrenotazione" asp-route-id="@prenotazione.IDPrenotazione">Stampa Dettaglio</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-
-<a asp-action="Create" class="btn btn-success">Aggiungi Nuova Prenotazione</a>
-<a asp-action="ConteggioPrenotazioniPensioneCompleta" class="btn btn-info">Conteggio Prenotazioni Pensione Completa</a>
+<a asp-action="Create">Aggiungi Nuova Prenotazione</a>

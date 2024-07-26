@@ -5,12 +5,12 @@
     <input type="hidden" asp-for="IDPrenotazione" />
     <div class="form-group">
         <label asp-for="CodiceFiscaleCliente"></label>
-        <input asp-for="CodiceFiscaleCliente" class="form-control" />
+        <select asp-for="CodiceFiscaleCliente" class="form-control" asp-items="ViewBag.Clienti"></select>
         <span asp-validation-for="CodiceFiscaleCliente" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="NumeroCamera"></label>
-        <input asp-for="NumeroCamera" class="form-control" />
+        <select asp-for="NumeroCamera" class="form-control" asp-items="ViewBag.Camere"></select>
         <span asp-validation-for="NumeroCamera" class="text-danger"></span>
     </div>
     <div class="form-group">
@@ -27,6 +27,15 @@
         <label asp-for="DataFineSoggiorno"></label>
         <input asp-for="DataFineSoggiorno" type="date" class="form-control" />
         <span asp-validation-for="DataFineSoggiorno" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Dettagli"></label>
+        <select asp-for="Dettagli" class="form-control">
+            <option value="Pernottamento con Prima Colazione" selected="@Model.Dettagli == " Pernottamento con Prima Colazione"">Pernottamento con Prima Colazione</option>
+            <option value="Mezza Pensione" selected="@Model.Dettagli == " Mezza Pensione"">Mezza Pensione</option>
+            <option value="Pensione Completa" selected="@Model.Dettagli == " Pensione Completa"">Pensione Completa</option>
+        </select>
+        <span asp-validation-for="Dettagli" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">Salva</button>
 </form>
