@@ -123,7 +123,7 @@ VALUES (2, 3, '2023-08-11', 2, 5.00);
 
 INSERT INTO Users (UserName, PasswordHash, Email, FirstName, LastName)
 VALUES
-('admin', 'hashed_password1', 'admin@example.com', 'Admin', 'User'),
+('admin', 'admin', 'admin@example.com', 'Admin', 'User'),
 ('user1', 'hashed_password2', 'user1@example.com', 'User', 'One');
 
 
