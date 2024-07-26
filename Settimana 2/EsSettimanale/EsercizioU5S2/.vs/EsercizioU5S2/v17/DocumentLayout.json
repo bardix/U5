@@ -98,8 +98,7 @@
               "RelativeToolTip": "Services\\PrenotazioniService.cs",
               "ViewState": "AQIAAL0AAAAAAAAAAAAwwMoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:14:02.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:14:02.323Z"
             },
             {
               "$type": "Document",
@@ -109,7 +108,7 @@
               "RelativeDocumentMoniker": "Views\\Prenotazioni\\Index.cshtml",
               "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\Index.cshtml",
               "RelativeToolTip": "Views\\Prenotazioni\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-26T08:30:19.095Z",
               "EditorCaption": ""
@@ -124,8 +123,7 @@
               "RelativeToolTip": "Models\\DettaglioPrenotazioneViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:06:02.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T09:06:02.767Z"
             },
             {
               "$type": "Document",
@@ -137,8 +135,7 @@
               "RelativeToolTip": "Controllers\\PrenotazioniController.cs",
               "ViewState": "AQIAAI8AAAAAAAAAAAAuwKYAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:15:26.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:15:26.548Z"
             },
             {
               "$type": "Document",
@@ -150,8 +147,7 @@
               "RelativeToolTip": "Views\\Prenotazioni\\StampaDettaglioPrenotazione.cshtml",
               "ViewState": "AQIAABkAAAAAAAAAAAAAwD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T09:20:58.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T09:20:58.448Z"
             },
             {
               "$type": "Document",
@@ -163,8 +159,7 @@
               "RelativeToolTip": "Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T08:29:51.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:29:51.762Z"
             },
             {
               "$type": "Document",
@@ -176,8 +171,7 @@
               "RelativeToolTip": "Views\\Prenotazioni\\RicercaPrenotazioniCliente.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T10:16:16.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T10:16:16.383Z"
             },
             {
               "$type": "Document",
@@ -189,8 +183,7 @@
               "RelativeToolTip": "Models\\ServizioPrenotazione.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAA+wAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:09:08.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T09:09:08.686Z"
             },
             {
               "$type": "Document",
@@ -202,8 +195,7 @@
               "RelativeToolTip": "Views\\Prenotazioni\\DettaglioPrenotazione.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T09:19:13.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T09:19:13.181Z"
             },
             {
               "$type": "Document",
@@ -215,8 +207,7 @@
               "RelativeToolTip": "Services\\ServizioPrenotazioniService.cs",
               "ViewState": "AQIAAIgAAAAAAAAAAIBJwKkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:08:08.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T09:08:08.611Z"
             },
             {
               "$type": "Document",
@@ -228,8 +219,7 @@
               "RelativeToolTip": "Services\\IServizioprenotazioniService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:08:04.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T09:08:04.668Z"
             },
             {
               "$type": "Document",
@@ -241,8 +231,7 @@
               "RelativeToolTip": "Views\\Prenotazioni\\Edit.cshtml",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T08:38:05.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:38:05.492Z"
             },
             {
               "$type": "Document",
@@ -254,8 +243,7 @@
               "RelativeToolTip": "Views\\Prenotazioni\\Create.cshtml",
               "ViewState": "AQIAAAQAAAAAAAAAAAAAwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T08:35:37.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:35:37.613Z"
             },
             {
               "$type": "Document",
@@ -267,8 +255,7 @@
               "RelativeToolTip": "Services\\ICamereService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAA+wAYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:48:14.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:48:14.635Z"
             },
             {
               "$type": "Document",
@@ -280,8 +267,7 @@
               "RelativeToolTip": "Services\\IClientiService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAA+wAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:42:42.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:42:42.082Z"
             },
             {
               "$type": "Document",
@@ -293,8 +279,7 @@
               "RelativeToolTip": "Models\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAA+wA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:42:26.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:42:26.718Z"
             },
             {
               "$type": "Document",
@@ -306,8 +291,7 @@
               "RelativeToolTip": "Models\\Prenotazione.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAA+wA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:37:32.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:37:32.768Z"
             },
             {
               "$type": "Document",
@@ -319,8 +303,7 @@
               "RelativeToolTip": "Services\\IPrenotazioniService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:15:14.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T08:15:14.212Z"
             }
           ]
         }
