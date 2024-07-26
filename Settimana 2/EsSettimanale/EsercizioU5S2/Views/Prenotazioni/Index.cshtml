@@ -1,7 +1,16 @@
 ﻿@model IEnumerable<Prenotazione>
 
 <h1>Gestione Prenotazioni</h1>
-<table class="table">
+
+<form method="get" asp-action="RicercaPrenotazioniCliente">
+    <div class="form-group">
+        <label for="codiceFiscale">Codice Fiscale Cliente:</label>
+        <input type="text" name="codiceFiscale" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Cerca Prenotazioni</button>
+</form>
+
+<table class="table mt-3">
     <thead>
         <tr>
             <th>Codice Fiscale</th>
@@ -25,4 +34,6 @@
         }
     </tbody>
 </table>
-<a asp-action="Create">Aggiungi Nuova Prenotazione</a>
+
+<a asp-action="Create" class="btn btn-success">Aggiungi Nuova Prenotazione</a>
+<a asp-action="ConteggioPrenotazioniPensioneCompleta" class="btn btn-info">Conteggio Prenotazioni Pensione Completa</a>

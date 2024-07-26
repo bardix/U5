@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Prenotazione>
+
+@{
+    ViewData["Title"] = "Prenotazioni per Cliente";
+}
+
+<h2>Prenotazioni per Cliente</h2>
+
+<form method="get" asp-action="RicercaPrenotazioniCliente">
+    <div class="form-group">
+        <label for="codiceFiscale">Codice Fiscale Cliente:</label>
+        <input type="text" name="codiceFiscale" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Cerca</button>
+</form>
+
+@if (Model.Any())
+{
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>ID Prenotazione</th>
+                <th>Numero Camera</th>
+                <th>Data Prenotazione</th>
+                <th>Periodo</th>
+                <th>Caparra</th>
+                <th>Tariffa</th>
+                <th>Dettagli</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prenotazione in Model)
+            {
+                <tr>
+                    <td>@prenotazione.IDPrenotazione</td>
+                    <td>@prenotazione.NumeroCamera</td>
+                    <td>@prenotazione.DataPrenotazione.ToString("dd/MM/yyyy")</td>
+                    <td>@prenotazione.DataInizioSoggiorno.ToString("dd/MM/yyyy") - @prenotazione.DataFineSoggiorno.ToString("dd/MM/yyyy")</td>
+                    <td>@prenotazione.Caparra</td>
+                    <td>@prenotazione.Tariffa</td>
+                    <td>@prenotazione.Dettagli</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nessuna prenotazione trovata per il cliente con codice fiscale: @ViewBag.CodiceFiscale</p>
+}

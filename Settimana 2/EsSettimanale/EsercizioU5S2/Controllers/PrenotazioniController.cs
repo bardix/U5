@@ -130,9 +130,16 @@ public class PrenotazioniController : Controller
     [Authorize(Roles = "Dipendente")]
     public async Task<IActionResult> RicercaPrenotazioniCliente(string codiceFiscale)
     {
+        if (string.IsNullOrEmpty(codiceFiscale))
+        {
+            return View(new List<Prenotazione>());
+        }
+
         var prenotazioni = await _prenotazioniService.GetPrenotazioniByClienteCodiceFiscaleAsync(codiceFiscale);
+        ViewBag.CodiceFiscale = codiceFiscale; // Per visualizzare il codice fiscale nella vista
         return View(prenotazioni);
     }
+
 
     [Authorize(Roles = "Dipendente")]
     public async Task<IActionResult> RicercaPrenotazioniPensioneCompleta()
@@ -141,4 +148,14 @@ public class PrenotazioniController : Controller
         ViewBag.NumeroPrenotazioni = numeroPrenotazioni;
         return View();
     }
+
+
+    [Authorize(Roles = "Dipendente")]
+    public async Task<IActionResult> ConteggioPrenotazioniPensioneCompleta()
+    {
+        var numeroPrenotazioni = await _prenotazioniService.GetNumeroPrenotazioniPensioneCompletaAsync();
+        ViewBag.NumeroPrenotazioni = numeroPrenotazioni;
+        return View();
+    }
+
 }
