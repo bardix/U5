@@ -20,10 +20,12 @@
                 <td>
                     <a asp-action="Edit" asp-route-id="@prenotazione.IDPrenotazione">Modifica</a> |
                     <a asp-action="Delete" asp-route-id="@prenotazione.IDPrenotazione">Elimina</a> |
-                    <a asp-action="StampaDettaglioPrenotazione" asp-route-id="@prenotazione.IDPrenotazione">Stampa Dettaglio</a>
+                    <a asp-action="StampaDettaglioPrenotazione" asp-route-id="@prenotazione.IDPrenotazione">Stampa</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-<a asp-action="Create">Aggiungi Nuova Prenotazione</a>
+<a asp-action="Create">Aggiungi Nuova Prenotazione</a> |
+<a asp-action="RicercaPrenotazioniCliente">Ricerca Prenotazioni per Cliente</a> |
+<a asp-action="ConteggioPrenotazioniPensioneCompleta">Conteggio Prenotazioni Pensione Completa</a>

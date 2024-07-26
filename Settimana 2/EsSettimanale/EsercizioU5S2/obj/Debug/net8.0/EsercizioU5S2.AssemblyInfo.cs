@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EsercizioU5S2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+274e4a775b6e5adab688b1c95afd75c548b258d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38807e1bcf7aa4cfe3b93fac767b46c7054a02eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("EsercizioU5S2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EsercizioU5S2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

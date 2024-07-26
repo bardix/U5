@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\views\\prenotazioni\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:views\\prenotazioni\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\views\\prenotazioni\\conteggioprenotazionipensionecompleta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:views\\prenotazioni\\conteggioprenotazionipensionecompleta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\controllers\\prenotazionicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:controllers\\prenotazionicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\services\\prenotazioniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:services\\prenotazioniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\views\\prenotazioni\\ricercaprenotazionicliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:views\\prenotazioni\\ricercaprenotazionicliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\models\\dettaglioprenotazioneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:models\\dettaglioprenotazioneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,24 +43,8 @@
       "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:views\\prenotazioni\\dettaglioprenotazione.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\controllers\\prenotazionicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:controllers\\prenotazionicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\views\\prenotazioni\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:views\\prenotazioni\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\services\\iservizioprenotazioniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:services\\iservizioprenotazioniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\services\\prenotazioniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:services\\prenotazioniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\views\\prenotazioni\\conteggioprenotazionipensionecompleta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|solutionrelative:views\\prenotazioni\\conteggioprenotazionipensionecompleta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17081582-B896-4421-902E-50152ED70C77}|EsercizioU5S2.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 2\\essettimanale\\eserciziou5s2\\views\\prenotazioni\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -78,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,46 +90,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PrenotazioniService.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\PrenotazioniService.cs",
+              "RelativeDocumentMoniker": "Services\\PrenotazioniService.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\PrenotazioniService.cs",
+              "RelativeToolTip": "Services\\PrenotazioniService.cs",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAwwMoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T08:14:02.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prenotazioni\\Index.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\Index.cshtml",
+              "RelativeToolTip": "Views\\Prenotazioni\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T08:30:19.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DettaglioPrenotazioneViewModel.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\DettaglioPrenotazioneViewModel.cs",
               "RelativeDocumentMoniker": "Models\\DettaglioPrenotazioneViewModel.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\DettaglioPrenotazioneViewModel.cs",
               "RelativeToolTip": "Models\\DettaglioPrenotazioneViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T09:06:02.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServizioPrenotazioniService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\ServizioPrenotazioniService.cs",
-              "RelativeDocumentMoniker": "Services\\ServizioPrenotazioniService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\ServizioPrenotazioniService.cs",
-              "RelativeToolTip": "Services\\ServizioPrenotazioniService.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAAAKkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:08:08.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServizioPrenotazione.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\ServizioPrenotazione.cs",
-              "RelativeDocumentMoniker": "Models\\ServizioPrenotazione.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\ServizioPrenotazione.cs",
-              "RelativeToolTip": "Models\\ServizioPrenotazione.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAAAAAA",
+              "Title": "PrenotazioniController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Controllers\\PrenotazioniController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PrenotazioniController.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Controllers\\PrenotazioniController.cs",
+              "RelativeToolTip": "Controllers\\PrenotazioniController.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAuwKYAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:09:08.686Z",
+              "WhenOpened": "2024-07-26T08:15:26.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "StampaDettaglioPrenotazione.cshtml",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\StampaDettaglioPrenotazione.cshtml",
               "RelativeDocumentMoniker": "Views\\Prenotazioni\\StampaDettaglioPrenotazione.cshtml",
@@ -138,7 +155,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConteggioPrenotazioniPensioneCompleta.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
+              "RelativeToolTip": "Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T08:29:51.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "RicercaPrenotazioniCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\RicercaPrenotazioniCliente.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prenotazioni\\RicercaPrenotazioniCliente.cshtml",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\RicercaPrenotazioniCliente.cshtml",
+              "RelativeToolTip": "Views\\Prenotazioni\\RicercaPrenotazioniCliente.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T10:16:16.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServizioPrenotazione.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\ServizioPrenotazione.cs",
+              "RelativeDocumentMoniker": "Models\\ServizioPrenotazione.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\ServizioPrenotazione.cs",
+              "RelativeToolTip": "Models\\ServizioPrenotazione.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T09:09:08.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "DettaglioPrenotazione.cshtml",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\DettaglioPrenotazione.cshtml",
               "RelativeDocumentMoniker": "Views\\Prenotazioni\\DettaglioPrenotazione.cshtml",
@@ -152,32 +208,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Prenotazioni\\Index.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\Index.cshtml",
-              "RelativeToolTip": "Views\\Prenotazioni\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T08:30:19.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PrenotazioniController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Controllers\\PrenotazioniController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PrenotazioniController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Controllers\\PrenotazioniController.cs",
-              "RelativeToolTip": "Controllers\\PrenotazioniController.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAIAxwIMAAABkAAAA",
+              "Title": "ServizioPrenotazioniService.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\ServizioPrenotazioniService.cs",
+              "RelativeDocumentMoniker": "Services\\ServizioPrenotazioniService.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\ServizioPrenotazioniService.cs",
+              "RelativeToolTip": "Services\\ServizioPrenotazioniService.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAIBJwKkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:15:26.548Z",
+              "WhenOpened": "2024-07-26T09:08:08.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "IServizioprenotazioniService.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\IServizioprenotazioniService.cs",
               "RelativeDocumentMoniker": "Services\\IServizioprenotazioniService.cs",
@@ -190,33 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ConteggioPrenotazioniPensioneCompleta.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
-              "RelativeDocumentMoniker": "Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
-              "RelativeToolTip": "Views\\Prenotazioni\\ConteggioPrenotazioniPensioneCompleta.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T08:29:51.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PrenotazioniService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\PrenotazioniService.cs",
-              "RelativeDocumentMoniker": "Services\\PrenotazioniService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\PrenotazioniService.cs",
-              "RelativeToolTip": "Services\\PrenotazioniService.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAADgv94AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T08:14:02.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Prenotazioni\\Edit.cshtml",
@@ -229,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Views\\Prenotazioni\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Prenotazioni\\Create.cshtml",
@@ -242,59 +259,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ICamereService.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\ICamereService.cs",
               "RelativeDocumentMoniker": "Services\\ICamereService.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\ICamereService.cs",
               "RelativeToolTip": "Services\\ICamereService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T08:48:14.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IClientiService.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\IClientiService.cs",
               "RelativeDocumentMoniker": "Services\\IClientiService.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\IClientiService.cs",
               "RelativeToolTip": "Services\\IClientiService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T08:42:42.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\Cliente.cs",
               "RelativeToolTip": "Models\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T08:42:26.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Prenotazione.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\Prenotazione.cs",
               "RelativeDocumentMoniker": "Models\\Prenotazione.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Models\\Prenotazione.cs",
               "RelativeToolTip": "Models\\Prenotazione.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T08:37:32.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IPrenotazioniService.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 2\\EsSettimanale\\EsercizioU5S2\\Services\\IPrenotazioniService.cs",
               "RelativeDocumentMoniker": "Services\\IPrenotazioniService.cs",
