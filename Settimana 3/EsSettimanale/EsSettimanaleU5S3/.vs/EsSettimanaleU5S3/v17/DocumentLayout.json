@@ -3,44 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\ingredientproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\ingredientproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\roleuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\roleuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\pizzeriadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\pizzeriadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\datamodel\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:datamodel\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,141 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\Role.cs",
-              "RelativeDocumentMoniker": "DataModel\\Role.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\Role.cs",
-              "RelativeToolTip": "DataModel\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:37:13.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\User.cs",
-              "RelativeDocumentMoniker": "DataModel\\User.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\User.cs",
-              "RelativeToolTip": "DataModel\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:36:49.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoleUser.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\RoleUser.cs",
-              "RelativeDocumentMoniker": "DataModel\\RoleUser.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\RoleUser.cs",
-              "RelativeToolTip": "DataModel\\RoleUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:37:40.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IngredientProduct.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\IngredientProduct.cs",
-              "RelativeDocumentMoniker": "DataModel\\IngredientProduct.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\IngredientProduct.cs",
-              "RelativeToolTip": "DataModel\\IngredientProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:35:05.711Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\Product.cs",
-              "RelativeDocumentMoniker": "DataModel\\Product.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\Product.cs",
-              "RelativeToolTip": "DataModel\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAsAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:34:27.897Z",
+              "WhenOpened": "2024-07-30T14:46:39.028Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PizzeriaDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\PizzeriaDbContext.cs",
-              "RelativeDocumentMoniker": "DataModel\\PizzeriaDbContext.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\PizzeriaDbContext.cs",
-              "RelativeToolTip": "DataModel\\PizzeriaDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:43:48.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\OrderItem.cs",
-              "RelativeDocumentMoniker": "DataModel\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\OrderItem.cs",
-              "RelativeToolTip": "DataModel\\OrderItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:36:07.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\Order.cs",
-              "RelativeDocumentMoniker": "DataModel\\Order.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\Order.cs",
-              "RelativeToolTip": "DataModel\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:35:39.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Ingredient.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\Ingredient.cs",
-              "RelativeDocumentMoniker": "DataModel\\Ingredient.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\DataModel\\Ingredient.cs",
-              "RelativeToolTip": "DataModel\\Ingredient.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T15:33:08.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T20:02:40.429Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

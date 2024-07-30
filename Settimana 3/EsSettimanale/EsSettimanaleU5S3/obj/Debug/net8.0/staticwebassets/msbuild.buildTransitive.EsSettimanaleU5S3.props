@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EsSettimanaleU5S3.props" />
+</Project>

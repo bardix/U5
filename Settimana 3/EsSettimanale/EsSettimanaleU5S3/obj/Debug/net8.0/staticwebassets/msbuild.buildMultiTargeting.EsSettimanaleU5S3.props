@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EsSettimanaleU5S3.props" />
+</Project>
