@@ -16,7 +16,7 @@ namespace EsSettimanaleU5S3.DataModel
         [Required]
         [StringLength(70)]
         public string ShippingAddress { get; set; }
-        
+
         [Required]
         public string Notes { get; set; }
 

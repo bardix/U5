@@ -37,6 +37,28 @@ namespace EsSettimanaleU5S3.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Ingredients");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Tomato"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Cheese"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Pepperoni"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Mushrooms"
+                        });
                 });
 
             modelBuilder.Entity("EsSettimanaleU5S3.DataModel.IngredientProduct", b =>
@@ -53,6 +75,38 @@ namespace EsSettimanaleU5S3.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("IngredientProducts");
+
+                    b.HasData(
+                        new
+                        {
+                            IngredientId = 1,
+                            ProductId = 1
+                        },
+                        new
+                        {
+                            IngredientId = 2,
+                            ProductId = 1
+                        },
+                        new
+                        {
+                            IngredientId = 3,
+                            ProductId = 2
+                        },
+                        new
+                        {
+                            IngredientId = 2,
+                            ProductId = 2
+                        },
+                        new
+                        {
+                            IngredientId = 2,
+                            ProductId = 3
+                        },
+                        new
+                        {
+                            IngredientId = 4,
+                            ProductId = 3
+                        });
                 });
 
             modelBuilder.Entity("EsSettimanaleU5S3.DataModel.Order", b =>
@@ -86,6 +140,17 @@ namespace EsSettimanaleU5S3.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Orders");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsCompleted = false,
+                            Notes = "Leave at the door",
+                            OrderDate = new DateTime(2024, 8, 1, 18, 39, 28, 202, DateTimeKind.Local).AddTicks(3853),
+                            ShippingAddress = "123 Main St",
+                            UserId = 2
+                        });
                 });
 
             modelBuilder.Entity("EsSettimanaleU5S3.DataModel.OrderItem", b =>
@@ -115,6 +180,24 @@ namespace EsSettimanaleU5S3.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("OrderItems");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            OrderId = 1,
+                            ProductId = 1,
+                            Quantity = 2,
+                            TotalPrice = 11.98m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            OrderId = 1,
+                            ProductId = 3,
+                            Quantity = 1,
+                            TotalPrice = 8.99m
+                        });
                 });
 
             modelBuilder.Entity("EsSettimanaleU5S3.DataModel.Product", b =>
@@ -143,6 +226,32 @@ namespace EsSettimanaleU5S3.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DeliveryTime = 20,
+                            Name = "Margherita",
+                            PhotoUrl = "margherita.jpg",
+                            Price = 5.99m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DeliveryTime = 25,
+                            Name = "Pepperoni",
+                            PhotoUrl = "pepperoni.jpg",
+                            Price = 7.99m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DeliveryTime = 30,
+                            Name = "Quattro Formaggi",
+                            PhotoUrl = "quattro_formaggi.jpg",
+                            Price = 8.99m
+                        });
                 });
 
             modelBuilder.Entity("EsSettimanaleU5S3.DataModel.Role", b =>
@@ -161,12 +270,23 @@ namespace EsSettimanaleU5S3.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "User"
+                        });
                 });
 
             modelBuilder.Entity("EsSettimanaleU5S3.DataModel.RoleUser", b =>
                 {
                     b.Property<int>("RoleId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
@@ -177,6 +297,18 @@ namespace EsSettimanaleU5S3.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("RoleUsers");
+
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 1,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            RoleId = 2,
+                            UserId = 2
+                        });
                 });
 
             modelBuilder.Entity("EsSettimanaleU5S3.DataModel.User", b =>
@@ -204,6 +336,22 @@ namespace EsSettimanaleU5S3.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "admin@example.com",
+                            Name = "Admin User",
+                            Password = "admin123"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Email = "user@example.com",
+                            Name = "Regular User",
+                            Password = "user123"
+                        });
                 });
 
             modelBuilder.Entity("EsSettimanaleU5S3.DataModel.IngredientProduct", b =>

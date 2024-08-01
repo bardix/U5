@@ -1,0 +1,27 @@
+﻿@model IEnumerable<EsSettimanaleU5S3.DataModel.Product>
+
+@{
+    ViewData["Title"] = "Prodotti";
+}
+
+<h1>Prodotti</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Prezzo</th>
+            <th>Tempo di Consegna</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price.ToString("C")</td>
+                <td>@item.DeliveryTime</td>
+            </tr>
+        }
+    </tbody>
+</table>

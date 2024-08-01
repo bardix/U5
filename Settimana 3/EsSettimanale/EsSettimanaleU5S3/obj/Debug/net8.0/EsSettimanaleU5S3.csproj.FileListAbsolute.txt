@@ -32,6 +32,7 @@ C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settim
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\System.Composition.Convention.dll

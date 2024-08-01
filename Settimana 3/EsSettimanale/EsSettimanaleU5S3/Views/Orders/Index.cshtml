@@ -1,0 +1,29 @@
+﻿@model IEnumerable<EsSettimanaleU5S3.DataModel.Order>
+
+@{
+    ViewData["Title"] = "Ordini";
+}
+
+<h1>Elenco Ordini</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID Ordine</th>
+            <th>Data Ordine</th>
+            <th>Stato</th>
+            <th>Dettagli</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.Id</td>
+                <td>@order.OrderDate.ToString("g")</td>
+                <td>@(order.IsCompleted ? "Completato" : "In corso")</td>
+                <td><a href="@Url.Action("Summary", "Orders", new { orderId = order.Id })">Visualizza</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

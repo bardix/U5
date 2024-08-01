@@ -1,0 +1,17 @@
+﻿@model IEnumerable<EsSettimanaleU5S3.DataModel.Product>
+
+@{
+    ViewData["Title"] = "Shop";
+}
+
+<h1>Products</h1>
+
+@foreach (var product in Model)
+{
+    <div class="product">
+        <h3>@product.Name</h3>
+        <p>Price: @product.Price.ToString("C")</p>
+        <p>Delivery Time: @product.DeliveryTime minutes</p>
+        <a asp-action="Details" asp-route-id="@product.Id">View Details</a>
+    </div>
+}
