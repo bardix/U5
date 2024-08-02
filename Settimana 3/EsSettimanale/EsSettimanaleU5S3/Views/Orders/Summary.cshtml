@@ -1,0 +1,84 @@
+﻿@model EsSettimanaleU5S3.DataModel.Order
+
+@{
+    ViewData["Title"] = "Dettagli Ordine";
+}
+
+<h2>Dettagli dell'Ordine</h2>
+
+<div>
+    <h4>Informazioni sull'ordine</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            ID Ordine
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Id
+        </dd>
+
+        <dt class="col-sm-2">
+            Data Ordine
+        </dt>
+        <dd class="col-sm-10">
+            @Model.OrderDate.ToString("g")
+        </dd>
+
+        <dt class="col-sm-2">
+            Stato
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.IsCompleted ? "Completato" : "In corso")
+        </dd>
+
+        <dt class="col-sm-2">
+            Indirizzo di Spedizione
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ShippingAddress
+        </dd>
+
+        <dt class="col-sm-2">
+            Note
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Notes
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h4>Articoli dell'Ordine</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome Prodotto</th>
+                <th>Quantità</th>
+                <th>Prezzo Unitario</th>
+                <th>Prezzo Totale</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderItems)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Product.Price.ToString("C")</td>
+                    <td>@item.TotalPrice.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h4>Totale Ordine</h4>
+    <hr />
+    <p>
+        <strong>Totale: </strong> @Model.OrderItems.Sum(item => item.TotalPrice).ToString("C")
+    </p>
+</div>
+
+<a asp-action="Index" class="btn btn-primary">Torna agli Ordini</a>

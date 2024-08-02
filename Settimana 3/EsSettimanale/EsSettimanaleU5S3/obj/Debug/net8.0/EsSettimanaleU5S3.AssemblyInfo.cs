@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EsSettimanaleU5S3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+871b06e1eb9aae2d5f97269d9a1d4dc936198316")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c56844fe7e2b400a6bba4fb70fe1814da71c297e")]
 [assembly: System.Reflection.AssemblyProductAttribute("EsSettimanaleU5S3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EsSettimanaleU5S3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
