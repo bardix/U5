@@ -1,10 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EsSettimanaleU5S3.DataModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace EsSettimanaleU5S3.Models
 {
     public class ProductViewModel
     {
-        public int Id { get; set; } 
+        public int Id { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -20,6 +21,9 @@ namespace EsSettimanaleU5S3.Models
         [Required]
         public int DeliveryTime { get; set; }
 
-        public List<int> IngredientIds { get; set; } 
+        public List<int> IngredientIds { get; set; }
+
+        // Aggiungi una proprietà per la lista degli ingredienti
+        public List<Ingredient> Ingredients { get; set; }
     }
 }

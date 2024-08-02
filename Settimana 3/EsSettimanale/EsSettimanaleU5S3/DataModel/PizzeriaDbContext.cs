@@ -30,10 +30,12 @@ namespace EsSettimanaleU5S3.DataModel
             // Configurazione delle chiavi composite
             modelBuilder.Entity<IngredientProduct>()
                 .HasKey(ip => new { ip.IngredientId, ip.ProductId });
+
             modelBuilder.Entity<IngredientProduct>()
                 .HasOne(ip => ip.Ingredient)
                 .WithMany(i => i.IngredientProducts)
                 .HasForeignKey(ip => ip.IngredientId);
+
             modelBuilder.Entity<IngredientProduct>()
                 .HasOne(ip => ip.Product)
                 .WithMany(p => p.IngredientProducts)
@@ -41,14 +43,21 @@ namespace EsSettimanaleU5S3.DataModel
 
             modelBuilder.Entity<RoleUser>()
                 .HasKey(ru => new { ru.RoleId, ru.UserId });
+
             modelBuilder.Entity<RoleUser>()
                 .HasOne(ru => ru.Role)
                 .WithMany(r => r.RoleUsers)
                 .HasForeignKey(ru => ru.RoleId);
+
             modelBuilder.Entity<RoleUser>()
                 .HasOne(ru => ru.User)
                 .WithMany(u => u.RoleUsers)
                 .HasForeignKey(ru => ru.UserId);
+
+            // Configurazione della precisione per il campo TotalPrice di OrderItem
+            modelBuilder.Entity<OrderItem>()
+                .Property(oi => oi.TotalPrice)
+                .HasColumnType("decimal(18,2)");
 
             // Dati di base per i prodotti
             modelBuilder.Entity<Product>().HasData(

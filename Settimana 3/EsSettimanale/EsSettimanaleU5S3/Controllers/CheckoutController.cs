@@ -2,6 +2,9 @@
 using EsSettimanaleU5S3.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using System.Threading.Tasks;
+using System.Linq;
+using System;
 
 public class CheckoutController : Controller
 {
@@ -44,19 +47,18 @@ public class CheckoutController : Controller
                 OrderDate = DateTime.Now,
                 ShippingAddress = model.ShippingAddress,
                 Notes = model.Notes,
-                IsCompleted = false
+                IsCompleted = false,
+                OrderItems = cart.Select(item => new OrderItem
+                {
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity,
+                    TotalPrice = item.Quantity * item.Product.Price
+                }).ToList()
             };
 
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
 
-            foreach (var item in cart)
-            {
-                item.OrderId = order.Id; // Assegna l'ID dell'ordine
-                _context.OrderItems.Add(item);
-            }
-
-            await _context.SaveChangesAsync();
             _cartService.ClearCart();
 
             return RedirectToAction("OrderConfirmed");

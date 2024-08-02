@@ -8,6 +8,7 @@ C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settim
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\EsSettimanaleU5S3.pdb
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\FluentAssertions.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Humanizer.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\david\Desktop\Epicode\Esercitazioni Epicode\Unità 5\Repo mia\U5\Settimana 3\EsSettimanale\EsSettimanaleU5S3\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll

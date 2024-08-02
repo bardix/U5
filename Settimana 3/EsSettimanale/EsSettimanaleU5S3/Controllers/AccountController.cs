@@ -1,7 +1,11 @@
 ﻿using EsSettimanaleU5S3.DataModel;
 using EsSettimanaleU5S3.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace EsSettimanaleU5S3.Controllers
 {
@@ -30,13 +34,35 @@ namespace EsSettimanaleU5S3.Controllers
                 var user = await _context.Users
                     .Include(u => u.RoleUsers)
                     .ThenInclude(ru => ru.Role)
-                   .FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
+                    .FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
 
                 if (user != null)
                 {
-                    TempData["User"] = user.Name;
-                    var roles = user.RoleUsers.Select(ur => ur.Role.Name).ToArray();
-                    TempData["Roles"] = roles;
+                    // Crea le dichiarazioni (claims)
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Name, user.Name),
+                        new Claim(ClaimTypes.Email, user.Email)
+                    };
+
+                    // Aggiungi i ruoli dell'utente alle dichiarazioni
+                    var userRoles = user.RoleUsers.Select(ur => ur.Role.Name);
+                    foreach (var role in userRoles)
+                    {
+                        claims.Add(new Claim(ClaimTypes.Role, role));
+                    }
+
+                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                    var authProperties = new AuthenticationProperties
+                    {
+                        IsPersistent = true,
+                        ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(30)
+                    };
+
+                    // Autentica l'utente
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
+
                     return RedirectToAction("Index", "Home");
                 }
                 ModelState.AddModelError(string.Empty, "Tentativo di accesso non valido.");
@@ -81,14 +107,19 @@ namespace EsSettimanaleU5S3.Controllers
             return View(model);
         }
 
-        // POST: Account/Logout
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
+            // Effettua il logout dell'utente
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            // Cancella i dati di TempData (se utilizzati)
             TempData["User"] = null;
             TempData["Roles"] = null;
+
             return RedirectToAction("Index", "Home");
         }
+
     }
 }

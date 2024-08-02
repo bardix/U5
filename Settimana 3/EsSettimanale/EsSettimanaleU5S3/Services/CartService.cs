@@ -1,4 +1,7 @@
 ﻿using EsSettimanaleU5S3.DataModel;
+using EsSettimanaleU5S3.Models;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
 
 public class CartService
 {
@@ -11,10 +14,10 @@ public class CartService
         _context = context;
     }
 
-    public List<OrderItem> GetCart()
+    public List<CartItem> GetCart()
     {
         var session = _httpContextAccessor.HttpContext.Session;
-        var cart = session.Get<List<OrderItem>>("Cart") ?? new List<OrderItem>();
+        var cart = session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
         return cart;
     }
 
@@ -26,18 +29,16 @@ public class CartService
         if (cartItem == null)
         {
             var product = _context.Products.Find(productId);
-            cart.Add(new OrderItem
+            cart.Add(new CartItem
             {
                 ProductId = productId,
                 Product = product,
-                Quantity = quantity,
-                TotalPrice = product.Price * quantity
+                Quantity = quantity
             });
         }
         else
         {
             cartItem.Quantity += quantity;
-            cartItem.TotalPrice = cartItem.Quantity * cartItem.Product.Price;
         }
 
         SaveCart(cart);
@@ -57,12 +58,12 @@ public class CartService
 
     public void ClearCart()
     {
-        SaveCart(new List<OrderItem>());
+        SaveCart(new List<CartItem>());
     }
 
-    private void SaveCart(List<OrderItem> cart)
+    private void SaveCart(List<CartItem> cart)
     {
         var session = _httpContextAccessor.HttpContext.Session;
-        session.Set("Cart", cart);
+        session.SetObjectAsJson("Cart", cart);
     }
 }

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EsSettimanaleU5S3.Controllers
 {
- 
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly PizzeriaDbContext _context;
@@ -20,15 +20,17 @@ namespace EsSettimanaleU5S3.Controllers
             var products = _context.Products.ToList();
             return View(products);
         }
-        [HttpGet]
+
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewBag.Ingredients = _context.Ingredients.ToList();
-            return View();
+            return View(new ProductViewModel());
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create(ProductViewModel model)
         {
             if (ModelState.IsValid)
@@ -44,7 +46,7 @@ namespace EsSettimanaleU5S3.Controllers
                 _context.Products.Add(product);
                 await _context.SaveChangesAsync();
 
-                if (model.IngredientIds != null)
+                if (model.IngredientIds != null && model.IngredientIds.Any())
                 {
                     foreach (var ingredientId in model.IngredientIds)
                     {
@@ -55,60 +57,10 @@ namespace EsSettimanaleU5S3.Controllers
 
                 return RedirectToAction(nameof(Index));
             }
+
+            // Ricarica gli ingredienti se il modello non è valido
+            ViewBag.Ingredients = _context.Ingredients.ToList();
             return View(model);
-        }
-
-        public IActionResult Edit(int id)
-        {
-            var product = _context.Products.Find(id);
-            if (product == null) return NotFound();
-
-            return View(product);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(ProductViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var product = _context.Products.Find(model.Id);
-                if (product != null)
-                {
-                    product.Name = model.Name;
-                    product.Price = model.Price;
-                    product.DeliveryTime = model.DeliveryTime;
-                    product.PhotoUrl = model.PhotoUrl;
-
-                    _context.Products.Update(product);
-                    await _context.SaveChangesAsync();
-
-                    return RedirectToAction(nameof(Index));
-                }
-                return NotFound();
-            }
-            return View(model);
-        }
-
-        public IActionResult Delete(int id)
-        {
-            var product = _context.Products.Find(id);
-            if (product == null) return NotFound();
-
-            return View(product);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var product = _context.Products.Find(id);
-            if (product != null)
-            {
-                _context.Products.Remove(product);
-                await _context.SaveChangesAsync();
-            }
-            return RedirectToAction(nameof(Index));
         }
     }
 }

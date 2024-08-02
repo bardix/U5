@@ -4,23 +4,40 @@
     ViewData["Title"] = "Prodotti";
 }
 
-<h1>Prodotti</h1>
+<h2>Prodotti</h2>
+
+@if (User.IsInRole("Admin"))
+{
+    <a href="@Url.Action("Create", "Products")" class="btn btn-success mb-3">Crea Nuovo Prodotto</a>
+}
 
 <table class="table">
     <thead>
         <tr>
+            <th>Immagine</th> <!-- Colonna per l'immagine -->
             <th>Nome</th>
             <th>Prezzo</th>
             <th>Tempo di Consegna</th>
+            <th>Azione</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
+                <td>
+                    <img src="@item.PhotoUrl" alt="@item.Name" style="width:100px; height:auto;" /> <!-- Immagine del prodotto -->
+                </td>
                 <td>@item.Name</td>
                 <td>@item.Price.ToString("C")</td>
                 <td>@item.DeliveryTime</td>
+                <td>
+                    <form asp-action="AddToCart" asp-controller="Cart" method="post">
+                        <input type="hidden" name="productId" value="@item.Id" />
+                        <input type="number" name="quantity" value="1" min="1" class="form-control" style="width: 60px; display: inline;" />
+                        <button type="submit" class="btn btn-primary">Aggiungi al carrello</button>
+                    </form>
+                </td>
             </tr>
         }
     </tbody>

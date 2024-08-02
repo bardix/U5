@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EsSettimanaleU5S3.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class OrdersController : Controller
     {
         private readonly PizzeriaDbContext _context;

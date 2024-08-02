@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace EsSettimanaleU5S3.Controllers
 {
     [Authorize(Roles = "Admin")]
-    [Area("Admin")]
+
     public class IngredientsController : Controller
     {
         private readonly PizzeriaDbContext _context;

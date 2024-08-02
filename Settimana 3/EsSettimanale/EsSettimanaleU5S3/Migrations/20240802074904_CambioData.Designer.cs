@@ -4,6 +4,7 @@ using EsSettimanaleU5S3.DataModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EsSettimanaleU5S3.Migrations
 {
     [DbContext(typeof(PizzeriaDbContext))]
-    partial class PizzeriaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240802074904_CambioData")]
+    partial class CambioData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -147,7 +150,7 @@ namespace EsSettimanaleU5S3.Migrations
                             Id = 1,
                             IsCompleted = false,
                             Notes = "Leave at the door",
-                            OrderDate = new DateTime(2024, 8, 2, 14, 20, 13, 334, DateTimeKind.Local).AddTicks(7603),
+                            OrderDate = new DateTime(2024, 8, 2, 9, 49, 4, 497, DateTimeKind.Local).AddTicks(2385),
                             ShippingAddress = "123 Main St",
                             UserId = 2
                         });

@@ -19,6 +19,8 @@ namespace EsSettimanaleU5S3.DataModel
 
         [Required]
         public int Quantity { get; set; }
+
+        
         public decimal TotalPrice { get; set; }
     }
 
