@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|c:\\users\\david\\desktop\\epicode\\esercitazioni epicode\\unit\u00E0 5\\repo mia\\u5\\settimana 3\\essettimanale\\essettimanaleu5s3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95E87D9-E1D4-4A8D-BD69-69739580487F}|EsSettimanaleU5S3.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T09:09:26.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\Epicode\\Esercitazioni Epicode\\Unit\u00E0 5\\Repo mia\\U5\\Settimana 3\\EsSettimanale\\EsSettimanaleU5S3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T09:09:23.448Z",
+              "EditorCaption": ""
             }
           ]
         }
