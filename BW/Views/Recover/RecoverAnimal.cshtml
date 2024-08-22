@@ -1,0 +1,27 @@
+﻿@model IEnumerable<BW2_Team6.Models.Recover>
+
+@{
+    ViewData["Title"] = "RecoverAnimal";
+}
+
+<h1>RecoverAnimal</h1>
+<a class="btn btn-primary mb-2" asp-action="AllRecovers">Vedi tutti i ricoveri</a>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DateRecover)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="infAnimal">
+
+    </tbody>
+</table>

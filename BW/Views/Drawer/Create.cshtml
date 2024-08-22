@@ -1,0 +1,62 @@
+﻿@model BW2_Team6.Models.DrawerViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    var products = ViewBag.Products;
+    var lockers = ViewBag.Lockers;
+}
+
+<h1>Create</h1>
+
+<h4>DrawerViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label for="productsId">Select Products</label>
+                <div>
+                    @foreach (var p in products)
+                    {
+                        <div class="form-check">
+                            <input type="checkbox"
+                                   id="product_@p.Id"
+                                   name="ProductsId"
+                                   value="@p.Id"
+                                   class="form-check-input"
+                           />
+                            <label for="product_@p.Id" class="form-check-label">
+                                @p.Name
+                            </label>
+                        </div>
+                    }
+                </div>
+                <span asp-validation-for="productsId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="LockerId">Select Locker</label>
+                <select id="LockerId" name="LockerId" class="form-control">
+                    @foreach (var l in lockers)
+                    {
+                        <option value="@l.Id">Armadietto n°:@l.NumberLocker</option>
+                    }
+                </select>
+                <span asp-validation-for="LockerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

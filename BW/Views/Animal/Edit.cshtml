@@ -1,0 +1,58 @@
+﻿@model BW2_Team6.Models.Animal
+
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Modifica Animale</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form asp-action="Edit">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="Id" />
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Nome</label>
+                    <input asp-for="Name" class="form-control" placeholder="Inserisci il nome dell'animale" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Type" class="form-label">Tipo</label>
+                    <input asp-for="Type" class="form-control" placeholder="Inserisci il tipo dell'animale" />
+                    <span asp-validation-for="Type" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Fur" class="form-label">Pelliccia</label>
+                    <input asp-for="Fur" class="form-control" placeholder="Inserisci la pelliccia" />
+                    <span asp-validation-for="Fur" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="DateBirth" class="form-label">Data di Nascita</label>
+                    <input asp-for="DateBirth" type="date" class="form-control" />
+                    <span asp-validation-for="DateBirth" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Microchip" class="form-label">Microchip</label>
+                    <input asp-for="Microchip" class="form-control" placeholder="Inserisci il numero del microchip" />
+                    <span asp-validation-for="Microchip" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="OwnerId" class="form-label">Proprietario</label>
+                    <select id="OwnerId" name="OwnerId" class="form-select" asp-items="ViewBag.Owners">
+                        <option value="">-- Seleziona Proprietario --</option>
+                    </select>
+                    <span asp-validation-for="Owner" class="text-danger"></span>
+                </div>
+                <div class="d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+    </div>
+</div>
+
+
+
+

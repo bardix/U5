@@ -1,0 +1,56 @@
+﻿@model BW2_Team6.Models.RecoverViewModel
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Modifica informazioni del ricovero</h1>
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="Update" enctype="multipart/form-data" class="shadow-sm p-4 rounded">
+            <div class="form-group">
+                <div class="mb-3">
+                    <label class="form-label">Existing Image</label>
+                    @if (!string.IsNullOrEmpty(Model.ExistingImagePath))
+                    {
+                        <div class="text-center">
+                            <img src="@Model.ExistingImagePath" alt="Existing Image" class="rounded shadow-sm" style="max-width: 300px;" />
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No image available</p>
+                    }
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="Image" class="form-label fs-">Inserisci Immagine</label>
+                    <input asp-for="Image" type="file" class="form-control" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+
+
+                <h6>Stato del ricovero</h6>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" asp-for="IsActive" id="isActiveCheckbox" />
+                    <label class="form-check-label fs-6" for="isActiveCheckbox">
+                        @Html.DisplayNameFor(model => model.IsActive)
+                    </label>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <input type="submit" value="Salva" class="btn btn-primary btn-lg" />
+                </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

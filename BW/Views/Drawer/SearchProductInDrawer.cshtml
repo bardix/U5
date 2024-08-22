@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BW2_Team6.Models.Product>
+
+@{
+    ViewData["Title"] = "SearchProductInDrawer";
+}
+
+<h1>SearchProductInDrawer</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+      
+@foreach (var item in Model) {
+        <tr>
+            <td>
+              <input type="radio" id="product_@item.Id" value="@item.Id"/>
+              
+            </td>
+            <td>
+                    <label>@item.Name</label>
+            </td>
+            <td>
+                    <button class="ReasearchP btn btn-primary" data-product-id="@item.Id">Research</button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div id="productInf"></div>

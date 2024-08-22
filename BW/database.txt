@@ -1,0 +1,80 @@
+- Animale
+
+Id
+DataDiRegistrazione
+Nome
+Tipologia
+ColoreMantello
+DataDiNascita
+Microchip  // UNIQUE
+IdProprietario 
+
+- Proprietario
+
+Id
+Nome
+Cognome
+NumeroCellulare
+Email
+
+- Visita
+
+IdVisita
+IdAnimale
+Data
+TipoEsame
+Cura
+
+- Ricovero
+
+Id
+IdAniamle (FK)
+DataDiRicovero
+ImgURL
+
+- Prodotto
+
+IdProdotto
+Nome
+Tipo
+Uso
+IdDitta // Manca
+
+- Ditta
+
+Id
+Recapito
+Nome
+Indirizzo
+
+- Vendita
+
+Id
+IdProprietario
+IdProdotto
+NumeroRicetta // UNIQUE
+
+- Armadietto
+Id
+NumeroArmadietto // UNIQUE
+
+
+- Cassetti
+Id
+IdProdotto
+IdArmadietto
+
+
+- User
+
+
+- Role
+
+- UserRole
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+﻿@model IEnumerable<BW2_Team6.Models.Animal>
+
+@{
+    ViewData["Title"] = "Lista degli animali";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4 text-center display-4">Lista degli Animali</h1>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <p class="lead mb-0">Qui puoi visualizzare tutti gli animali registrati nel sistema.</p>
+        <a asp-action="Create" class="btn btn-success btn-lg shadow-sm">
+            <i class="bi bi-plus-lg"></i> Aggiungi nuovo animale
+        </a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle shadow-sm">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Pelliccia</th>
+                    <th>Data di Nascita</th>
+                    <th>Microchip</th>
+                    <th>Proprietario</th>
+                    <th class="text-center">Azioni</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Type)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Fur)</td>
+                        <td>@item.DateBirth.ToShortDateString()</td>
+                        <td>@Html.DisplayFor(modelItem => item.Microchip)</td>
+                        <td>
+                            @if (item.Owner != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.Owner.FirstName)
+                            }
+                            else
+                            {
+                                <span class="text-danger">Nessun Proprietario</span>
+                            }
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
+                                    <i class="bi bi-pencil-square"></i> Modifica
+                                </a>
+                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-animal-id="@item.Id">
+                                    <i class="bi bi-trash-fill"></i> Elimina
+                                </button>
+                                <button type="button" class="btn btn-primary btn-sm" data-animal-id="@item.Id" data-bs-toggle="modal" data-bs-target="#visiteModal">
+                                    <i class="bi bi-eye-fill"></i> Visite
+                                </button>
+                                @if (item.Owner == null)
+                                {
+                                    <a asp-action="Create" asp-controller="Recover" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                                        <i class="bi bi-box-arrow-in-right"></i> Ricovero
+                                    </a>
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal di Conferma Eliminazione -->
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="confirmDeleteModalLabel">Conferma Eliminazione</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Sei sicuro di voler eliminare questo animale? Questa azione non può essere annullata.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                <form id="deleteForm" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" id="deleteAnimalId" />
+                    <button type="submit" class="btn btn-danger">Elimina</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal per le Visite -->
+<div class="modal fade" id="visiteModal" tabindex="-1" aria-labelledby="visiteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="visiteModalLabel">Visite dell'Animale</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Data Visita</th>
+                            <th>Esame Obiettivo</th>
+                            <th>Cura Prescritta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="visitsTableBody">
+                        <!-- I dati delle visite verranno inseriti qui -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                <div id="buttonVisit">
+                    <!-- Pulsante per aggiungere nuove visite se necessario -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        // Gestione del modal di eliminazione
+        var deleteForm = document.getElementById('deleteForm');
+        var deleteAnimalIdInput = document.getElementById('deleteAnimalId');
+
+        document.querySelectorAll('button[data-bs-target="#confirmDeleteModal"]').forEach(button => {
+            button.addEventListener('click', function () {
+                var animalId = this.getAttribute('data-animal-id');
+                deleteAnimalIdInput.value = animalId;
+                deleteForm.action = '@Url.Action("Delete", "Animal")/' + animalId;
+            });
+        });
+    </script>
+}
+
+
+
+
+
+
+

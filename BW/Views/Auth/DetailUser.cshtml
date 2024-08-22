@@ -1,0 +1,66 @@
+﻿@model BW2_Team6.Models.User
+
+@{
+    ViewData["Title"] = "DetailUser";
+    var rolesToAdd = ViewBag.Roles;
+}
+
+<h1>DetailUser</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Roles)
+        </dt>
+        <dd class = "col-sm-10">
+            <ul>
+                @foreach (var role in Model.Roles)
+                {
+                    <li>@role.Name
+                        <a asp-action="RemoveRoleToUser"
+                           class="btn btn-danger"
+                           asp-controller="Auth"
+                           asp-route-roleName="@role.Name"
+                           asp-route-userId="@Model.Id">Remove Role</a>
+                    </li>
+                  
+                }
+            </ul>
+        </dd>
+        
+        <dd>
+            <ul>
+
+            @foreach(var role in rolesToAdd)
+            {
+                    <li>@role
+                        <a
+                            class="btn btn-success"
+                        asp-action="AddRoleToUser"
+                        asp-controller="Auth"
+                        asp-route-roleName="@role"
+                        asp-route-userId="@Model.Id">Add Role</a>
+                    </li>
+            }
+            </ul>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,185 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4">Benvenuto in PharmaCode</h1>
+        <p class="lead">Gestisci tutti i dati relativi agli animali, proprietari, visite, e molto altro.</p>
+    </div>
+
+    
+    <div class="row">
+        @if (User.Identity?.IsAuthenticated ?? false)
+        {
+            <!-- Animali -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-flower2"></i>
+                        <h5 class="card-title">Animali</h5>
+                        <p class="card-text">Visualizza e gestisci tutti gli animali registrati nel sistema.</p>
+                        <a href="@Url.Action("AllAnimals", "Animal")" class="btn btn-primary">Vai agli Animali</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proprietari -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-person-fill"></i>
+                        <h5 class="card-title">Proprietari</h5>
+                        <p class="card-text">Gestisci i proprietari degli animali.</p>
+                        <a href="@Url.Action("AllOwner", "Owner")" class="btn btn-primary">Vai ai Proprietari</a>
+                    </div>
+                </div>
+            </div>
+
+            @if (User.IsInRole("Veterinario") || User.IsInRole("Admin"))
+            {
+                <!-- Visite -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-calendar-check-fill"></i>
+                            <h5 class="card-title">Visite</h5>
+                            <p class="card-text">Controlla tutte le visite degli animali.</p>
+                            <a href="@Url.Action("AllVisits", "Visit")" class="btn btn-primary">Vai alle Visite</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ricoveri -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-hospital-fill"></i>
+                            <h5 class="card-title">Ricoveri</h5>
+                            <p class="card-text">Gestisci i ricoveri degli animali smarriti.</p>
+                            <a href="@Url.Action("RecoverAnimal", "Recover")" class="btn btn-primary">Vai ai Ricoveri</a>
+                        </div>
+                    </div>
+                </div>
+            }
+            @if (User.IsInRole("Farmacista") || User.IsInRole("Admin"))
+            {
+                <!-- Ditte -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-building"></i>
+                            <h5 class="card-title">Ditte</h5>
+                            <p class="card-text">Visualizza e gestisci le ditte fornitrici.</p>
+                            <a href="@Url.Action("AllCompanies", "Companies")" class="btn btn-primary">Vai alle Ditte</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Farmacia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-prescription2"></i>
+                            <h5 class="card-title">Farmacia</h5>
+                            <p class="card-text">Gestisci i prodotti della farmacia.</p>
+                            <a href="@Url.Action("AllProducts", "Pharmacy")" class="btn btn-primary">Vai alla Farmacia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vendite -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-cart-fill"></i>
+                            <h5 class="card-title">Vendite</h5>
+                            <p class="card-text">Visualizza e gestisci le vendite dei prodotti.</p>
+                            <a href="@Url.Action("AllSells", "Sell")" class="btn btn-primary">Vai alle Vendite</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cassetti -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-box-seam"></i>
+                            <h5 class="card-title">Cassetti</h5>
+                            <p class="card-text">Gestisci i cassetti per conservare i medicinali.</p>
+                            <a href="@Url.Action("AllDrawers", "Drawer")" class="btn btn-primary">Vai ai Cassetti</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Armadietti -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-box"></i>
+                            <h5 class="card-title">Armadietti</h5>
+                            <p class="card-text">Gestisci gli armadietti della farmacia.</p>
+                            <a href="@Url.Action("AllLockers", "Locker")" class="btn btn-primary">Vai agli Armadietti</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @if (User.IsInRole("Admin"))
+            {
+                <!-- Ruoli -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-people-fill"></i>
+                            <h5 class="card-title">Ruoli</h5>
+                            <p class="card-text">Gestisci i ruoli degli utenti del sistema.</p>
+                            <a href="@Url.Action("AllRoles", "Auth")" class="btn btn-primary">Vai ai Ruoli</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utenti -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-person-circle"></i>
+                            <h5 class="card-title">Utenti</h5>
+                            <p class="card-text">Visualizza e gestisci gli utenti del sistema.</p>
+                            <a href="@Url.Action("AllUsers", "Auth")" class="btn btn-primary">Vai agli Utenti</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        }
+
+
+        <!-- Logout/Login -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <h5 class="card-title">@((User.Identity?.IsAuthenticated ?? false) ? "Logout" : "Login")</h5>
+                    <p class="card-text">
+                        @if (User.Identity?.IsAuthenticated ?? false)
+                        {
+                            <span>Esci dal sistema.</span>
+                        }
+                        else
+                        {
+                            <span>Accedi al sistema.</span>
+                        }
+                    </p>
+                    <a href="@Url.Action((User.Identity?.IsAuthenticated ?? false) ? "Logout" : "Login", "Auth")" class="btn btn-primary">
+                        @((User.Identity?.IsAuthenticated ?? false) ? "Logout" : "Login")
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

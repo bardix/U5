@@ -1,0 +1,48 @@
+﻿@model IEnumerable<BW2_Team6.Models.Visit>
+
+@{
+    ViewData["Title"] = "AllVisits";
+}
+
+<h1>AllVisits</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DateVisit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeOfExam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeOfCure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.Animal)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateVisit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeOfExam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeOfCure)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Animal.Name)
+            </td>
+            <td>
+                    @Html.ActionLink("Update", "Update", new { id= item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

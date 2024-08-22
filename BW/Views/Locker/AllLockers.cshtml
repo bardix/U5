@@ -1,0 +1,47 @@
+﻿@model IEnumerable<BW2_Team6.Models.LockerViewModel>
+
+@{
+    ViewData["Title"] = "AllLockers";
+}
+
+<h1>AllLockers</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberLocker)
+            </th>
+            <th>@Html.DisplayNameFor(model => model.Drawer)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberLocker)
+            </td>
+            <td>
+                @foreach(var draver in item.Drawer)
+                {
+                   <p>Cassetto n°:@draver.Id </p>
+                }
+            </td>
+                <td>
+                @Html.ActionLink("Update", "Update", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

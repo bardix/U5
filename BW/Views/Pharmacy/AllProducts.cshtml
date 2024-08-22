@@ -1,0 +1,202 @@
+﻿@model IEnumerable<BW2_Team6.Models.Product>
+
+@{
+    ViewData["Title"] = "AllProducts";
+
+    string GenerateOption(string value, string currentFilter, string text)
+    {
+        return $"<option value=\"{value}\" {(currentFilter == value ? "selected" : "")}>{text}</option>";
+    }
+}
+
+<h1>AllProducts</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-4 mb-3">
+        <a class="btn btn-primary btn-block" asp-action="CreateProduct">Crea un nuovo prodotto</a>
+    </div>
+    <div class="col-md-4 mb-3">
+        <a class="btn btn-primary btn-block" asp-action="SearchProductInDrawer" asp-controller="Drawer">Ricerca del prodotto</a>
+    </div>
+    <div class="col-md-4 mb-3">
+        <a class="btn btn-primary btn-block" asp-action="SearchForPharmacist" asp-controller="Sell">Resoconto giornaliero</a>
+    </div>
+</div>
+<form method="get" asp-action="AllProducts">
+    <div class="form-group">
+        <label for="filter">Filtra per tipo di prodotto:</label>
+        <select id="filter" name="filter" class="form-control" onchange="this.form.submit()">
+            @Html.Raw(GenerateOption("all", ViewBag.Filter, "Tutti"))
+            @Html.Raw(GenerateOption("alimentari", ViewBag.Filter, "Prodotti Alimentari"))
+            @Html.Raw(GenerateOption("prodotti farmaceutici", ViewBag.Filter, "Prodotti Farmaceutici"))
+        </select>
+    </div>
+</form>
+
+<form asp-action="SellProducts" asp-controller="Sell">
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypeOfProduct)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypeOfUse)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <input type="checkbox" name="selectedProducts" value="@item.Id" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TypeOfProduct)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TypeOfUse)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "EditProduct", new { id = item.Id }, new { @class = "table-link" }) |
+                        @Html.ActionLink("Details", "DetailProduct", new { id = item.Id }, new { @class = "table-link" }) |
+                        @Html.ActionLink("Delete", "DeleteProduct", new { id = item.Id }, new { @class = "table-link" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="form-group">
+        <label for="OwnerId">Seleziona cliente</label>
+        <select id="OwnerId" name="OwnerId" class="form-control" asp-items="ViewBag.Owners">
+            <option value="0">-- Seleziona Cliente --</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="NumberOfRecipe">Numero di ricetta</label>
+        <input type="text" id="NumberOfRecipe" name="numberOfRecipe" class="form-control" />
+    </div>
+    <button type="submit">Procedi con la vendita</button>
+</form>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+    }
+
+    h1 {
+        color: #333;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    p {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    a.button-link {
+        text-decoration: none;
+        color: white !important;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+    }
+
+
+    a.table-link {
+        text-decoration: none;
+        color: #007bff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        a.table-link:hover {
+            background-color: #f0f0f0;
+            color: #0056b3;
+        }
+
+    .form-group {
+        margin-bottom: 2rem;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 1rem;
+        border: 0.1rem solid #ccc;
+        border-radius: 0.4rem;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 2rem;
+        background-color: white;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 1.5rem;
+        text-align: left;
+    }
+
+    th {
+        background-color: #007bff;
+        color: black;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e9e9e9;
+    }
+
+
+    button[type="submit"] {
+        background-color: #28a745;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+    main {
+        margin-right: 10em;
+        margin-left: 10em;
+    }
+</style>

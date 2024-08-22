@@ -1,0 +1,38 @@
+﻿@model IEnumerable<BW2_Team6.Models.Recover>
+
+@{
+    ViewData["Title"] = "AllRecovers";
+}
+
+<h1>Tutti i ricoveri degli animali smarriti</h1>
+
+
+<div class="row row-cols-4">
+@foreach (var item in Model) {
+    <div class="col">
+        <div class="card">
+                <img src="@item.Image" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Nome:</strong> @item.Animal.Name</h5>
+                    <p class="card-text"><strong>Data del Ricovero:</strong>@item.DateRecover.ToString("dd/MM/yyyy")</p>
+                    <p><strong>Ricovero:</strong>
+                    @if (item.IsActive)
+                    {
+                    <p>Attivo</p>
+                    }
+                    else
+                    {
+                     <p>Non attivo</p>
+                    }
+                    </p>
+                    @Html.ActionLink("Update", "Update", new { id = item.Id }, new { @class = "btn btn-warning btn-sm" })
+                    
+
+                    <a class="btn btn-primary btn-sm" asp-action="ChangeStatus" asp-route-id="@item.Id">Cambia Stato</a>
+
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+            </div>
+        </div>
+    </div>
+}
+</div>
